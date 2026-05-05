@@ -1,8 +1,8 @@
-#include <stdio.h>
+#include "Common/Platform.h"
 
 int main()
 {
-    puts("Hello, World!");
+    Platform_DebugLog("Hello, World");
     return 0;
 }
 
