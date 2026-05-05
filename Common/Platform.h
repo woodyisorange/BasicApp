@@ -38,3 +38,22 @@ inline void Platform_DebugLog(const char* Message)
 #endif
 }
 
+struct platform_app
+{
+    bool Quit;
+    struct
+    {
+        int32 Width;
+        int32 Height;
+    } Window;
+};
+
+inline void Platform_Init(platform_app* App)
+{
+}
+
+inline void Platform_Update(platform_app* App)
+{
+    App->Quit = true;
+}
+
