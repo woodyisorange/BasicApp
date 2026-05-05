@@ -4,8 +4,8 @@ platform_app App;
 
 int main()
 {
-    App.Window.Width = 800;
-    App.Window.Height = 600;
+    App.MainWindow.Width = 800;
+    App.MainWindow.Height = 600;
     Platform_Init(&App);
 
     while (!App.Quit)
@@ -13,6 +13,7 @@ int main()
         Platform_Update(&App);
     }
 
+    Platform_Cleanup(&App);
     return 0;
 }
 

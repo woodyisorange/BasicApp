@@ -13,6 +13,9 @@ Requires a command prompt with MSVC on the path (e.g. Visual Studio Developer Co
 
 ### Linux
 Requies a terminal with clang++ on the path.
+#### Dependencies
+- Clang
+- X11
 #### Debug Build
 > make debug
 
